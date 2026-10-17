@@ -104,7 +104,7 @@ type UserEditRequest struct {
 	Email    string `form:"email" binding:"required,email" conform:"trim"`
 	Password string `form:"password" binding:"omitempty,min=1,max=128" conform:"trim"`
 	Nickname string `form:"nickname" binding:"required,min=1,max=32" conform:"trim"`
-	Bio      string `form:"bio" binding:"max=255" conform:"trim"`
+	Bio      string `form:"bio" binding:"max=2000" conform:"trim"`
 }
 
 func UserEdit(c *gin.Context, req *UserEditRequest) {

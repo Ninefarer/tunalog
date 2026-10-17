@@ -180,6 +180,8 @@
     "settings_name_description": "This name will appear in titles and SEO search engines.",
     "settings_slogan": "Slogan",
     "settings_slogan_description": "Usually appears below the site title on the homepage as a short description.",
+    "settings_avatar": "Avatar",
+    "settings_avatar_description": "URL of the site avatar image, e.g. /uploads/avatar.png. Leave empty to use Gravatar based on the admin email address.",
     "settings_ispublic": "Is Public",
     "settings_ispublic_label": "Make the site accessible to anyone.",
     "settings_ispublic_descriptrion": "If this option is turned off, anyone must log in to view the site.",

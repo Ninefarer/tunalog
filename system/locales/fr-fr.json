@@ -180,6 +180,8 @@
     "settings_name_description": "Ce nom apparaîtra dans les titres et les moteurs de recherche SEO.",
     "settings_slogan": "Slogan",
     "settings_slogan_description": "Apparaît généralement sous le titre du site sur la page d'accueil comme une courte description.",
+    "settings_avatar": "Avatar",
+    "settings_avatar_description": "URL de l'image d'avatar du site, p. ex. /uploads/avatar.png. Laissez vide pour utiliser Gravatar basé sur l'adresse e-mail de l'administrateur.",
     "settings_ispublic": "Est public",
     "settings_ispublic_label": "Rendre le site accessible à tout le monde.",
     "settings_ispublic_descriptrion": "Si cette option est désactivée, tout utilisateur devra se connecter pour voir le site.",

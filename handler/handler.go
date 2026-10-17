@@ -11,6 +11,7 @@ import (
 
 	"github.com/YamiOdymel/conform"
 	"github.com/YamiOdymel/multitemplate"
+	"github.com/caris-events/tunalog/entity"
 	"github.com/caris-events/tunalog/system"
 	"github.com/caris-events/tunalog/view"
 	"github.com/gin-contrib/sessions"
@@ -79,6 +80,12 @@ var (
 		},
 		"_f": func(v string, data ...any) string {
 			return fmt.Sprintf(system.Locale.String(v), data...)
+		},
+		"avatar": func(u *entity.UserR) string {
+			if system.Config != nil && system.Config.AvatarURL != "" {
+				return system.Config.AvatarURL
+			}
+			return u.Gravatar()
 		},
 	}
 )

@@ -180,6 +180,8 @@
     "settings_name_description": "这个名称会出现在标题与 SEO 搜索引擎中。",
     "settings_slogan": "标语",
     "settings_slogan_description": "通常会出现在首页的网站标题下方，类似简短的说明。",
+    "settings_avatar": "头像",
+    "settings_avatar_description": "网站头像图片的 URL，例如 /uploads/avatar.png。留空则根据管理员邮箱使用 Gravatar。",
     "settings_ispublic": "网站开放中",
     "settings_ispublic_label": "公开网站任何人都可以查看。",
     "settings_ispublic_descriptrion": "若关闭此选项，任何人都必须登录才能查看网站。",

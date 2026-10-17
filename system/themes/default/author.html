@@ -2,7 +2,7 @@
     <div class="ts-grid {{ if not .Post.Author.Bio }}is-middle-aligned{{ end }}">
         <div class="column">
             <a href="{{ .URL.RelativeRoot }}author/{{ .Post.Author.ID }}" class="ts-image is-circular">
-                <img src="{{ .Post.Author.Gravatar }}" width="60" />
+                <img src="{{ avatar .Post.Author }}" width="60" />
             </a>
         </div>
         <div class="column is-fluid">

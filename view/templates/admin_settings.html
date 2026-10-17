@@ -37,6 +37,18 @@
                 </div>
                 <!-- / description -->
 
+                <!-- avatar_url -->
+                <div class="ts-control has-top-spaced-large">
+                    <div class="label">{{ __ "settings_avatar" }}</div>
+                    <div class="content">
+                        <div class="ts-input">
+                            <input type="text" name="avatar_url" value="{{ .Config.AvatarURL }}" placeholder="/uploads/avatar.png" />
+                        </div>
+                        <div class="ts-text is-description has-top-spaced-small">{{ __ "settings_avatar_description" }}</div>
+                    </div>
+                </div>
+                <!-- / avatar_url -->
+
                 <!-- is_public -->
                 <div class="ts-control has-top-spaced-large">
                     <div class="label">{{ __ "settings_ispublic" }}</div>

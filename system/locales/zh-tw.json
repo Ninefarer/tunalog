@@ -181,6 +181,8 @@
     "settings_name_description": "這個名稱會出現在標題與 SEO 搜尋引擎中。",
     "settings_slogan": "標語",
     "settings_slogan_description": "通常會出現在首頁的網站標題下方，類似簡短的說明。",
+    "settings_avatar": "頭像",
+    "settings_avatar_description": "網站頭像圖片的 URL，例如 /uploads/avatar.png。留空則根據管理員電子郵件使用 Gravatar。",
     "settings_ispublic": "網站開放中",
     "settings_ispublic_label": "公開網站讓任何人都可以觀看。",
     "settings_ispublic_descriptrion": "若關閉此選項，任何人都必須登入才能檢視網站。",

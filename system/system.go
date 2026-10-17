@@ -65,6 +65,12 @@ var (
 		"_f": func(v string, data ...any) string {
 			return fmt.Sprintf(themeLocale.String(v), data...)
 		},
+		"avatar": func(u *entity.UserR) string {
+			if Config != nil && Config.AvatarURL != "" {
+				return Config.AvatarURL
+			}
+			return u.Gravatar()
+		},
 	}
 )
 

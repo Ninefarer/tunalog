@@ -44,6 +44,7 @@ type Config struct {
 	PostsPerPage      int         `json:"posts_per_page"`
 	Theme             string      `json:"theme"`
 	Locale            string      `json:"locale"`
+	AvatarURL         string      `json:"avatar_url"`
 }
 
 func (c *Config) IsCustomTimeFormat() bool {

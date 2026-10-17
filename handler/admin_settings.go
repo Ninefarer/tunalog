@@ -46,6 +46,7 @@ type SettingsEditRequest struct {
 	TimeFormat       string `form:"time_format" binding:"required"`
 	TimeFormatCustom string `form:"time_format_custom" conform:"trim"`
 	Locale           string `form:"locale" binding:"required"`
+	AvatarURL        string `form:"avatar_url" conform:"trim"`
 }
 
 func SettingsEdit(c *gin.Context, req *SettingsEditRequest) {
@@ -54,6 +55,7 @@ func SettingsEdit(c *gin.Context, req *SettingsEditRequest) {
 	system.Config.IsPublic = req.IsPublic
 	system.Config.Timezone = req.Timezone
 	system.Config.Locale = req.Locale
+	system.Config.AvatarURL = req.AvatarURL
 
 	if req.DateFormat == "custom" {
 		system.Config.DateFormat = req.DateFormatCustom
